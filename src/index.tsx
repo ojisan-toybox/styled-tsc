@@ -1,11 +1,17 @@
 import * as React from "react";
 import styled from "styled-components";
 
-const Component = () => {
+class Hello extends React.Component {
+  render() {
+    return React.createElement("div", null, `Hello`);
+  }
+}
+
+const Component: React.FC = () => {
   return (
     <div>
       hello world
-      <StyledComponent>aa</StyledComponent>
+      <Hello></Hello>
     </div>
   );
 };
